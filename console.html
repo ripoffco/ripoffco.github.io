@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Console | SpaceTractor</title>
+            <script>
+                function addItem() {
+                    var txt = document.getElementById("in").value;
+                    var newItem = document.createElement("div");
+                    newItem.innerHTML = "console > " + txt;
+                    document.getElementById("list").appendChild(newItem);
+                    eval(txt);
+                }
+            </script>
+    </head>
+    <body style="background-color: lightgray;">
+        <a style="font-family:'Courier New', Courier, monospace; color: blue;" href="index.html">< Back</a><br/>
+        <font face="consolas">
+            <input style="background-color: lightgray; border: 0px; font-family: 'Courier New', Courier, monospace" autofocus type="text" size="100" id="in"/><input type="button" onclick="addItem();" value=" > "/>
+            <div id="list">Console > Info > event.console.opened</div>
+        </font>
+    </body>
+</html>
